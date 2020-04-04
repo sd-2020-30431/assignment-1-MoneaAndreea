@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+{% for item in data %}
+<tr>
+    <td>{{item.name}}</td>
+    <td>{{item.quantity}}</td>
+    <td>{{item.calories}}</td>
+    <td>{{item.expiredate}}</td>
+</tr>
+{% endfor %}
+</html>
